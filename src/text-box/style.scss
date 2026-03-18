@@ -1,0 +1,17 @@
+.wp-block-wpblocks-text-box {
+	background-color: #21759b;
+	color: #fff;
+	padding: 2px;
+
+	&.text-box-align-left {
+		text-align: left;
+	}
+
+	&.text-box-align-center {
+		text-align: center;
+	}
+
+	&.text-box-align-right {
+		text-align: right;
+	}
+}
