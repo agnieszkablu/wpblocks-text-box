@@ -17,7 +17,10 @@
 	},
 	"prettier": "@wordpress/prettier-config",
 	"stylelint": {
-		"extends": "@wordpress/stylelint-config/scss"
+		"extends": "@wordpress/stylelint-config/scss",
+		"rules": {
+			"rule-empty-line-before": null
+		}
 	},
 	"lint-staged": {
 		"*.{js,jsx}": [
@@ -42,6 +45,7 @@
 		"@wordpress/block-editor": "^15.10.0",
 		"@wordpress/blocks": "^15.10.0",
 		"@wordpress/components": "^32.3.0",
-		"@wordpress/i18n": "^6.10.0"
+		"@wordpress/i18n": "^6.10.0",
+		"classnames": "^2.5.1"
 	}
 }

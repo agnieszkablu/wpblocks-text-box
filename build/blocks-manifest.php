@@ -34,6 +34,22 @@ return array(
 			'alignment' => array(
 				'type' => 'string',
 				'default' => 'left'
+			),
+			'backgroundColor' => array(
+				'type' => 'string',
+				'default' => '#ffffff'
+			),
+			'textColor' => array(
+				'type' => 'string',
+				'default' => '#000000'
+			),
+			'customBackgroundColor' => array(
+				'type' => 'string',
+				'default' => '#ffffff'
+			),
+			'customTextColor' => array(
+				'type' => 'string',
+				'default' => '#000000'
 			)
 		)
 	)
