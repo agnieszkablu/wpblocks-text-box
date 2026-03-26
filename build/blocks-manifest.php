@@ -18,7 +18,12 @@ return array(
 			
 		),
 		'supports' => array(
-			'html' => false
+			'html' => false,
+			'color' => array(
+				'text' => true,
+				'background' => true,
+				'gradients' => true
+			)
 		),
 		'textdomain' => 'text-box',
 		'editorScript' => 'file:./index.js',
@@ -36,20 +41,18 @@ return array(
 				'default' => 'left'
 			),
 			'backgroundColor' => array(
-				'type' => 'string',
-				'default' => '#ffffff'
+				'type' => 'string'
 			),
 			'textColor' => array(
-				'type' => 'string',
-				'default' => '#000000'
+				'type' => 'string'
 			),
-			'customBackgroundColor' => array(
-				'type' => 'string',
-				'default' => '#ffffff'
-			),
-			'customTextColor' => array(
-				'type' => 'string',
-				'default' => '#000000'
+			'style' => array(
+				'type' => 'object',
+				'default' => array(
+					'color' => array(
+						'background' => '#f03c15'
+					)
+				)
 			)
 		)
 	)

@@ -16,8 +16,7 @@
 		"html": false,
 		"color": {
 			"text": true,
-			"background": true,
-			"gradients": true
+			"background": true
 		}
 	},
 	"textdomain": "text-box",
@@ -36,18 +35,20 @@
 			"default": "left"
 		},
 		"backgroundColor": {
-			"type": "string"
+			"type": "string",
+			"default": "#ffffff"
 		},
 		"textColor": {
-			"type": "string"
+			"type": "string",
+			"default": "#000000"
 		},
-		"style": {
-			"type": "object",
-			"default": {
-				"color": {
-					"background": "#f03c15"
-				}
-			}
+		"customBackgroundColor": {
+			"type": "string",
+			"default": "#ffffff"
+		},
+		"customTextColor": {
+			"type": "string",
+			"default": "#000000"
 		}
 	}
 }

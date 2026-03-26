@@ -13,7 +13,12 @@
   ],
   "example": {},
   "supports": {
-    "html": false
+    "html": false,
+    "color": {
+      "text": true,
+      "background": true,
+      "gradients": true
+    }
   },
   "textdomain": "text-box",
   "editorScript": "file:./index.js",
@@ -31,20 +36,18 @@
       "default": "left"
     },
     "backgroundColor": {
-      "type": "string",
-      "default": "#ffffff"
+      "type": "string"
     },
     "textColor": {
-      "type": "string",
-      "default": "#000000"
+      "type": "string"
     },
-    "customBackgroundColor": {
-      "type": "string",
-      "default": "#ffffff"
-    },
-    "customTextColor": {
-      "type": "string",
-      "default": "#000000"
+    "style": {
+      "type": "object",
+      "default": {
+        "color": {
+          "background": "#f03c15"
+        }
+      }
     }
   }
 }
