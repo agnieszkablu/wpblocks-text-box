@@ -28,5 +28,8 @@
 .wp-block-wpblocks-text-box.text-box-align-right {
   text-align: right;
 }
+.wp-block-wpblocks-text-box.is-style-rounded {
+  border-radius: 10px;
+}
 
 /*# sourceMappingURL=style-index.css.map*/

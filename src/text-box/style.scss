@@ -1,5 +1,6 @@
 .wp-block-wpblocks-text-box {
 	--shadow-opacity: 0.1;
+
 	&.has-shadow {
 		box-shadow: 0 4px 6px rgba(0, 0, 0, var(--shadow-opacity));
 	}
@@ -7,12 +8,15 @@
 	&.shadow-opacity-10 {
 		--shadow-opacity: 0.1;
 	}
+
 	&.shadow-opacity-20 {
 		--shadow-opacity: 0.2;
 	}
+
 	&.shadow-opacity-30 {
 		--shadow-opacity: 0.3;
 	}
+
 	&.shadow-opacity-40 {
 		--shadow-opacity: 0.4;
 	}
@@ -27,5 +31,9 @@
 
 	&.text-box-align-right {
 		text-align: right;
+	}
+
+	&.is-style-rounded {
+		border-radius: 10px;
 	}
 }

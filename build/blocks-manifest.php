@@ -28,6 +28,17 @@ return array(
 				'padding' => true
 			)
 		),
+		'styles' => array(
+			array(
+				'name' => 'squared',
+				'label' => 'Squared',
+				'isDefault' => true
+			),
+			array(
+				'name' => 'rounded',
+				'label' => 'Rounded'
+			)
+		),
 		'textdomain' => 'text-box',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
