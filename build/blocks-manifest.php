@@ -49,6 +49,14 @@ return array(
 			'textColor' => array(
 				'type' => 'string'
 			),
+			'shadow' => array(
+				'type' => 'boolean',
+				'default' => false
+			),
+			'shadowOpacity' => array(
+				'type' => 'number',
+				'default' => 30
+			),
 			'style' => array(
 				'type' => 'object',
 				'default' => array(
