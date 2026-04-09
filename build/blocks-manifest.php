@@ -23,6 +23,9 @@ return array(
 				'text' => true,
 				'background' => true,
 				'gradients' => true
+			),
+			'spacing' => array(
+				'padding' => true
 			)
 		),
 		'textdomain' => 'text-box',
@@ -51,6 +54,14 @@ return array(
 				'default' => array(
 					'color' => array(
 						'background' => '#f03c15'
+					),
+					'spacing' => array(
+						'padding' => array(
+							'top' => '20px',
+							'right' => '20px',
+							'bottom' => '20px',
+							'left' => '20px'
+						)
 					)
 				)
 			)

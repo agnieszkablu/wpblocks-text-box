@@ -17,9 +17,9 @@ function Edit( props ) {
 
 	return (
 		<>
-			<BlockControls group="inline">
-				<AlignmentToolbar value={ alignment } onChange={ onChangeAlignment } />
-			</BlockControls>
+		<BlockControls group="inline">
+			<AlignmentToolbar value={ alignment } onChange={ onChangeAlignment } />
+		</BlockControls>
 
 			<RichText
 				{ ...useBlockProps( {
