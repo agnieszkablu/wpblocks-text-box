@@ -8,6 +8,7 @@ import Edit from './edit';
 import save from './save';
 import metadata from './block.json';
 import { __ } from '@wordpress/i18n';
+import v1 from './v1';
 
 registerBlockType( metadata.name, {
 	icon: {
@@ -17,6 +18,7 @@ registerBlockType( metadata.name, {
 	},
 	edit: Edit,
 	save,
+	deprecated : [ v1 ],
 	variations: [
 		{
 			name: 'text-box/with-shadow',

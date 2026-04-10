@@ -63,7 +63,7 @@ function Edit( props ) {
 				{ ...useBlockProps( {
 					className: classes,
 				} ) }
-				tagName="p"
+				tagName="h4"
 				placeholder={ __( 'Write your text', 'text-box' ) }
 				value={ content }
 				allowedFormats={['core/bold']}
