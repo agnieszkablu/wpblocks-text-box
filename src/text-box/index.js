@@ -1,4 +1,4 @@
-import { registerBlockType } from '@wordpress/blocks';
+import { registerBlockType, createBlock } from '@wordpress/blocks';
 import './style.scss';
 
 /**
@@ -30,4 +30,51 @@ registerBlockType( metadata.name, {
 			},
 		},
 	],
+	transforms: {
+		from: [
+			{
+				type: 'block',
+				blocks: [ 'core/paragraph' ],
+				transform: ( { content, align } ) => {
+					return createBlock( 'wpblocks/text-box', {
+						content,
+						alignment: align,
+					} );
+				},
+			},
+			{
+				type: 'enter',
+				regExp: /textbox/i,
+				transform: () => {
+					return createBlock( 'wpblocks/text-box', {
+						shadow: true
+					} );
+				}
+			},
+			{
+				type: 'prefix',
+				prefix: 'textbox',
+				transform: () => {
+					return createBlock( 'wpblocks/text-box', {
+						gradient: 'accent-to-primary',
+					} );
+				}
+			}
+		],
+		to : [
+			{
+				type: 'block',
+				blocks: [ 'core/paragraph' ],
+				isMatch: ( { content}) => {
+					return !! content;
+				},
+				transform: ( { content, alignment } ) => {
+					return createBlock( 'core/paragraph', {
+						content,
+						align: alignment,
+					} );
+				}
+			}
+		]
+	},
 } );
