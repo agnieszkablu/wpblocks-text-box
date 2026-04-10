@@ -15,7 +15,10 @@ return array(
 			'paragraph'
 		),
 		'example' => array(
-			
+			'attributes' => array(
+				'content' => 'This is a text box block. You can edit the content and customize the styles using the block settings.',
+				'gradient' => 'linear-gradient(135deg, #f03c15, #f9a825)'
+			)
 		),
 		'supports' => array(
 			'html' => false,

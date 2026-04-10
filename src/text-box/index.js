@@ -7,6 +7,7 @@ import './style.scss';
 import Edit from './edit';
 import save from './save';
 import metadata from './block.json';
+import { __ } from '@wordpress/i18n';
 
 registerBlockType( metadata.name, {
 	icon: {
@@ -16,4 +17,17 @@ registerBlockType( metadata.name, {
 	},
 	edit: Edit,
 	save,
+	variations: [
+		{
+			name: 'text-box/with-shadow',
+			title: __( 'Text Box with Shadow', 'text-box' ),
+			icon: 'wordpress',
+			description: __( 'A text box with a shadow effect.', 'text-box' ),
+			attributes: {
+				gradient: 'accent-to-primary',
+				shadow: true,
+				shadowOpacity: 30,
+			},
+		},
+	],
 } );
