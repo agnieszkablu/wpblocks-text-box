@@ -53,7 +53,7 @@ return array(
 				'source' => 'html',
 				'selector' => 'p'
 			),
-			'alignment' => array(
+			'textAlignment' => array(
 				'type' => 'string',
 				'default' => 'left'
 			),

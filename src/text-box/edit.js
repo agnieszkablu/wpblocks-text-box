@@ -8,14 +8,14 @@ import classnames from 'classnames';
 function Edit( props ) {
 
 	const { attributes, setAttributes } = props;
-	const { content, alignment, shadow, shadowOpacity } = attributes;
+	const { content, textAlignment, shadow, shadowOpacity } = attributes;
 
 	const onChangeContent = ( newContent ) => {
 		setAttributes( { content: newContent } );
 	}
 
 	const onChangeAlignment = ( newAlignment ) => {
-		setAttributes( { alignment: newAlignment } );
+		setAttributes( { textAlignment: newAlignment } );
 	}
 
 	const toggleShadow = () => {
@@ -26,7 +26,7 @@ function Edit( props ) {
 		setAttributes( { shadowOpacity: newShadowOpacity } );
 	}
 
-	const classes = classnames( `text-box text-box-align-${ alignment }`, {
+	const classes = classnames( `text-box text-box-align-${ textAlignment }`, {
 		'has-shadow': shadow,
 		[ `shadow-opacity-${ shadowOpacity }` ]: shadow && shadowOpacity,
 	} );
@@ -45,7 +45,7 @@ function Edit( props ) {
 					}
 				] }
 			>
-			<AlignmentToolbar value={ alignment } onChange={ onChangeAlignment } />
+			<AlignmentToolbar value={ textAlignment } onChange={ onChangeAlignment } />
 		</BlockControls>
 		<InspectorControls group='styles'>
 				<PanelBody title={ __( 'Shadow Settings', 'text-box' ) }>

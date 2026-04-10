@@ -9,6 +9,7 @@ import save from './save';
 import metadata from './block.json';
 import { __ } from '@wordpress/i18n';
 import v1 from './v1';
+import v2 from './v2';
 
 registerBlockType( metadata.name, {
 	icon: {
@@ -18,7 +19,7 @@ registerBlockType( metadata.name, {
 	},
 	edit: Edit,
 	save,
-	deprecated : [ v1 ],
+	deprecated : [ v2, v1 ],
 	variations: [
 		{
 			name: 'text-box/with-shadow',
@@ -40,7 +41,7 @@ registerBlockType( metadata.name, {
 				transform: ( { content, align } ) => {
 					return createBlock( 'wpblocks/text-box', {
 						content,
-						alignment: align,
+						textAlignment: align,
 					} );
 				},
 			},
@@ -70,10 +71,10 @@ registerBlockType( metadata.name, {
 				isMatch: ( { content}) => {
 					return !! content;
 				},
-				transform: ( { content, alignment } ) => {
+				transform: ( { content, textAlignment } ) => {
 					return createBlock( 'core/paragraph', {
 						content,
-						align: alignment,
+						align: textAlignment,
 					} );
 				}
 			}

@@ -1,9 +1,9 @@
 import { useBlockProps, RichText } from '@wordpress/block-editor';
 import classnames from 'classnames';
-import blockData from './block.json';
 import { omit } from 'lodash';
+import blockData from './block.json';
 
-const v1 = {
+const v2 = {
 	supports: {
 		html: false,
 		color: {
@@ -20,11 +20,6 @@ const v1 = {
 		alignment: {
 			type: 'string',
 			default: 'left',
-		},
-		content: {
-			type: 'string',
-			source: 'html',
-			selector: 'p',
 		},
 	},
 	migrate: ( attributes ) => {
@@ -53,4 +48,4 @@ const v1 = {
 	}
 };
 
-export default v1;
+export default v2;
