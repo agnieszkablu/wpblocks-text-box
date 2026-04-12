@@ -48,7 +48,7 @@
     "content": {
       "type": "string",
       "source": "html",
-      "selector": "p"
+      "selector": "h4"
     },
     "textAlignment": {
       "type": "string",

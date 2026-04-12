@@ -51,7 +51,7 @@ return array(
 			'content' => array(
 				'type' => 'string',
 				'source' => 'html',
-				'selector' => 'p'
+				'selector' => 'h4'
 			),
 			'textAlignment' => array(
 				'type' => 'string',
